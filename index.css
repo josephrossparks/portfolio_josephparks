@@ -225,7 +225,7 @@ b {
 
 .work_image {
     width: 50%;
-    height: 50%;
+    height: auto;
 }
 
 .work_sample:nth-of-type(even) {
@@ -312,7 +312,7 @@ b {
 
     .work_image {
         width: 90%;
-        height: 90%;
+        height: auto;
     }
 
     .project_description {
