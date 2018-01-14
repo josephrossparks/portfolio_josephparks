@@ -13,9 +13,9 @@
 h1 {
     font-family: "futura-pt",sans-serif;
     color: white;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 0.9em;
-    margin-top: -90px;
+    
     margin-bottom: 5px;
 }
 
@@ -132,6 +132,11 @@ b {
 
 /* -- Header -- */
 
+#avatar_header {
+	width: 75%;
+	height: auto;
+}
+
 #header {
     width: 100%;
     height: 100vh;
@@ -141,6 +146,8 @@ b {
     flex-direction: column;
     align-items: center;
 
+    text-align: left;
+
     background-image: url("assets/images/header/red_stripe_background.png");
     background-repeat: none;
 }
@@ -149,21 +156,18 @@ b {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
 
-    width: 300px;
+	width: 230px;
+	margin-top: 50px; 
 
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 #subhead {
     margin-top: -5px;
-    font-weight: normal;
-    font-size: 3em;
+    font-weight: lighter;
+    font-size: 2.5em;
     line-height: 1.1em;
 }
 
@@ -312,14 +316,23 @@ b {
     }
 
     #header, #skills, #work, #contact, #footer {
-    padding: 50px 0;
-}
+    	padding: 50px 0;
+	}
+
+	#title {
+		margin-top: 0px;
+	}
+
+	#avatar_header {
+		width: 75%;
+		height: auto;
+	}
 
     .work_sample {
         flex-direction: column;
         align-items: center;
 
-        padding: 40px 10px;
+        padding: 40px 0px;
     }
 
     .work_sample:nth-of-type(even) {
