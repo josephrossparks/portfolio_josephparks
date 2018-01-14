@@ -43,7 +43,7 @@ h4 {
 }
 
 hr {
-    width: 90%;
+    width: 100%;
     border-top: 1px solid #484A47;
     opacity: 0.5;
 }
@@ -119,7 +119,7 @@ b {
     color: #FE5F55;
 }
 
-#header, #skills, #work, #contact, #footer {
+#skills, #work, #contact, #footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,8 +137,12 @@ b {
     height: 100vh;
     background-color: #FE5F55;
 
-    background: url("assets/images/header/red_stripe_background.png") center;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("assets/images/header/red_stripe_background.png");
+    background-repeat: none;
 }
 
 #title {
@@ -146,16 +150,21 @@ b {
     flex-direction: column;
     justify-content: flex-start;
 
-    margin-top: 10%;
-    padding-left: 20px;
     width: 300px;
+
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #subhead {
     margin-top: -5px;
     font-weight: normal;
     font-size: 3em;
-    line-height: 1em;
+    line-height: 1.1em;
 }
 
 .learn_more {
@@ -219,9 +228,6 @@ b {
     padding: 60px;
 }
 
-.work_sample:nth-of-type(1) {
-    padding: 0 60px 60px 60px;
-}
 
 .work_image {
     width: 50%;
@@ -230,6 +236,10 @@ b {
 
 .work_sample:nth-of-type(even) {
     flex-direction: row-reverse;
+}
+
+.work_sample:last-of-type {
+	margin-bottom: -50px;
 }
 
 .project_description {
@@ -301,9 +311,15 @@ b {
         margin: 30px 0;
     }
 
+    #header, #skills, #work, #contact, #footer {
+    padding: 50px 0;
+}
+
     .work_sample {
         flex-direction: column;
         align-items: center;
+
+        padding: 40px 10px;
     }
 
     .work_sample:nth-of-type(even) {
