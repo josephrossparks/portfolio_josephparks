@@ -1,5 +1,7 @@
+// Add smooth scrolling to all links
+
 $(document).ready(function(){
-  // Add smooth scrolling to all links
+  
   $("a").on('click', function(event) {
 
     if (this.hash !== "") {
@@ -14,6 +16,6 @@ $(document).ready(function(){
    
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 });
